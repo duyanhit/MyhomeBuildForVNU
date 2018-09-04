@@ -51,9 +51,9 @@ export default {
   gianHangDaKhoa: "Gian hàng đã khóa",
   xoaKhaoSatDaChon: "Xoá khảo sát đã chọn?",
   chonKhaoSatDeXoa: "Chọn khảo sát để xóa",
-  chamDeCapNhat: "Chạm vào đây để thêm thông tin cá nhân của bạn",
+  chamDeCapNhat: "Chạm vào đây để thêm thông tin trường lớp của bạn",
   vuiLongNhapDayDuThongTin:
-    "Vui lòng thêm thông tin cá nhân của bạn để sử dụng các tiện ích dành cho sinh viên.",
+    "Vui lòng thêm thông tin trường lớp của bạn để sử dụng các tiện ích dành cho sinh viên.",
   capNhat: "Cập nhật",
   congDong: "Diễn đàn",
   soTay: "Sổ tay",
@@ -65,7 +65,7 @@ export default {
   danhSachTang: "Danh sách chuyên ngành",
   gopY: "Góp ý",
   nhapThongTinDeSuDungTinhNangNay:
-    "Vui lòng thêm thông tin cá nhân của bạn để sử dụng tiện ích này",
+    "Vui lòng thêm thông tin trường lớp của bạn để sử dụng tiện ích này",
   quenMatKhau: "Quên mật khẩu",
   nhapEmailXacThuc: "Nhập email xác thực",
   nhapMaXacThuc: "Nhập mã xác thực",
@@ -174,7 +174,7 @@ export default {
   toaNha: "Khoa",
   tang: "Chuyên ngành",
   soPhong: "Tên lớp",
-  anhChungThuc: "Hình ảnh chứng thực thuộc lớp học",
+  anhChungThuc: "Xác minh bằng thẻ sinh viên của bạn",
   khongCoBinhLuan: "Không có bình luận nào cho bài viết này",
   soPhongInvalid:
     'Tên lớp bao gồm chữ cái, chữ số, dấu gạch ngang "-" và dấu chấm "." ',

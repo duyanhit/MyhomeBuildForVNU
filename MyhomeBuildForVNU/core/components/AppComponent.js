@@ -52,7 +52,7 @@ export default class AppComponent extends React.Component {
   imgNoData = config.images.noData;
   imgError = config.images.error;
   imgNoConnection = config.images.noConnection;
-  imgNoHome = config.images.noHome;
+  imgNoHome = config.images.noSchoolInfo;
   msgNoData = null;
 
   state = {
