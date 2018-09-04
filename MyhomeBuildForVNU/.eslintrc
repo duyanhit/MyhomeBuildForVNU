@@ -1,0 +1,18 @@
+{
+  "extends": "rallycoding",
+  "rules": {
+    "object-curly-spacing": "off",
+    "no-mixed-operators": "off",
+    "quotes": ["error", "double"],
+    "no-underscore-dangle": "off",
+    "max-len": [
+      2,
+      {
+        "code": 80,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true
+      }
+    ]
+  }
+}

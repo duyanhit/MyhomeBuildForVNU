@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "My Home VNU",
+    "icon": "./assets/logo_ios.png",
+    "slug": "myhome-vnu",
+    "sdkVersion": "29.0.0",
+    "platforms": ["ios", "android"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "primaryColor": "#21991E",
+    "androidStatusBar": {
+      "barStyle": "light-content",
+      "backgroundColor": "#2E7D32"
+    },
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "enabled": true,
+      "fallbackToCacheTimeout": 3000
+    },
+    "assetBundlePatterns": ["**/*"],
+    "notification": {
+      "icon": "./assets/ic_push_notification.png",
+      "color": "#21991E",
+      "androidMode": "collapse",
+      "androidCollapsedTitle": "Thông báo mới"
+    },
+    "ios": {
+      "bundleIdentifier": "com.gosol.myhome.vnu",
+      "buildNumber": "1",
+      "icon": "./assets/logo_ios.png",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationAlwaysUsageDescription":
+          "Allow My Home experiences to use your location"
+      },
+      "config": {
+        "googleSignIn": {
+          "reservedClientId":
+            "com.googleusercontent.apps.1094106824242-97232i9vfaogo3au9960vivc5v2lm15u"
+        }
+      }
+    },
+    "android": {
+      "package": "com.gosol.myhome.vnu",
+      "versionCode": 1,
+      "icon": "./assets/logo_android.png",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyC1JPN275-TqqT_7Mktkat6REf7RB_62dg"
+        },
+        "googleSignIn": {
+          "apiKey": "AIzaSyC1JPN275-TqqT_7Mktkat6REf7RB_62dg",
+          "certificateHash": "A2C5EEAA7AFFFC69210795A25CECBFC84ECC9B5B"
+        }
+      }
+    },
+    "facebookDisplayName": "My Home",
+    "facebookAppId": "1835837249798925",
+    "facebookScheme": "fb1835837249798925"
+  }
+}
