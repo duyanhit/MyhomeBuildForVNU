@@ -61,6 +61,6 @@ export const screenLabels = {
   TabKhaoSat: "Khảo sát",
   TabGopY: "Góp ý",
   TabSoTay: "Sổ tay",
-  TabCongDong: "Cộng đồng",
+  TabCongDong: "Diễn đàn",
   TabThongBao: "Thông báo"
 };

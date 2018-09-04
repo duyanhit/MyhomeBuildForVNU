@@ -118,15 +118,6 @@ class Main extends AppComponent {
           }}
         >
           <Tab
-            activeTabStyle={{ backgroundColor: "#fff" }}
-            tabStyle={{ backgroundColor: "#fff" }}
-            textStyle={{ color: colors.tabTextDefault }}
-            activeTextStyle={{ color: colors.brandPrimary }}
-            heading={strings.dichVu}
-          >
-            <DichVu navigation={this.props.navigation} />
-          </Tab>
-          <Tab
             heading={strings.cuDan}
             activeTabStyle={{ backgroundColor: "#fff" }}
             tabStyle={{ backgroundColor: "#fff" }}
@@ -134,6 +125,15 @@ class Main extends AppComponent {
             activeTextStyle={{ color: colors.brandPrimary }}
           >
             <CuDan navigation={this.props.navigation} />
+          </Tab>
+          <Tab
+            activeTabStyle={{ backgroundColor: "#fff" }}
+            tabStyle={{ backgroundColor: "#fff" }}
+            textStyle={{ color: colors.tabTextDefault }}
+            activeTextStyle={{ color: colors.brandPrimary }}
+            heading={strings.dichVu}
+          >
+            <DichVu navigation={this.props.navigation} />
           </Tab>
           <Tab
             heading={strings.taiKhoan}

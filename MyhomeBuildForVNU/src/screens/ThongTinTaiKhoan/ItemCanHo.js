@@ -122,30 +122,30 @@ class ItemCanHo extends AppComponent {
       item || {};
 
     const textHomeName = homeName
-      ? `Phòng ${homeName}`
-      : "(Phòng chưa cập nhật)";
-    const textFloor = floor ? `Tầng ${floor}` : "(Tầng chưa cập nhật)";
+      ? string.canHo + " " + homeName
+      : string.lopChuaCapNhat;
+    const textFloor = floor ? string.tang + " " + floor : string.chuyenNganhChuaCapNhat;
     const textApartmentBuildingName = apartmentBuildingName
-      ? `Tòa ${apartmentBuildingName}`
-      : "(Tòa chưa cập nhật)";
-    const textApartmentName = `Chung cư ${apartmentName}`;
+      ? string.toaNha + " " + apartmentBuildingName
+      : string.khoaChuaCapNhat;
+    const textApartmentName = string.chungCu + " " + apartmentName;
 
     let txt = "";
     let colorTxt = "gray";
     const acApp = activeApp && activeApp.toString();
     if (acApp === "1") {
-      txt = "Chưa duyệt";
+      txt = string.chuaDuyet;
       colorTxt = "#FF7F24";
     } else if (acApp === "2") {
       if (valid && valid.toString() === "1") {
-        txt = "Đã duyệt";
+        txt = string.daDuyet;
         colorTxt = colors.brandPrimary;
       } else {
-        txt = "Đã khóa";
+        txt = string.daKhoa;
         colorTxt = "gray";
       }
     } else if (acApp === "3") {
-      txt = "Không duyệt";
+      txt = string.khongDuyet;
       colorTxt = "red";
     }
 
