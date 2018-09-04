@@ -468,7 +468,6 @@ export default {
   banMuonDangGi: "Bạn muốn đăng gì?",
   chuaDuyet: "Chưa duyệt",
   daDuyet: "Đã duyệt",
-  daKhoa: "Đã khóa",
   khongDuyet: "Không duyệt",
   lopChuaCapNhat: "(Lớp chưa cập nhật)",
   chuyenNganhChuaCapNhat: "(Chuyên ngành chưa cập nhật)",
