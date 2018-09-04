@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { TouchableOpacity, View } from "react-native";
+import { TouchableOpacity, View, StyleSheet } from "react-native";
 import { EvilIcons, Ionicons } from "@expo/vector-icons";
 import { Header, Tab, Tabs, Text } from "native-base";
 import strings from "../../config/string";
@@ -43,24 +43,9 @@ class Main extends AppComponent {
 
     return (
       <View style={{ flex: 1 }}>
-        <Header
-          style={{
-            alignItems: "center",
-            backgroundColor: "white",
-            borderBottomWidth: 0
-          }}
-        >
+        <Header style={styles.header}>
           <TouchableOpacity
-            style={{
-              backgroundColor: colors.windowBackground,
-              flex: 1,
-              marginVertical: 5,
-              marginRight: 10,
-              padding: 5,
-              alignItems: "center",
-              borderRadius: 5,
-              flexDirection: "row"
-            }}
+            style={styles.btnSearch}
             onPress={this.navigateToScreen(
               screenNames.TimKiemSanPham,
               {},
@@ -68,37 +53,17 @@ class Main extends AppComponent {
             )}
           >
             <EvilIcons name="search" style={{ fontSize: 25 }} />
-            <Text style={{ flex: 1, marginLeft: 5, color: "#c9c9c9" }}>
-              {strings.timKiemSanPham}
-            </Text>
+            <Text style={styles.textSearch}>{strings.timKiemSanPham}</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={this.goToDanhSachNotification}>
             <View>
               <Ionicons
                 name="ios-notifications-outline"
-                style={{
-                  fontSize: 25,
-                  color: colors.textHeader,
-                  paddingHorizontal: 5
-                }}
+                style={styles.iconNotification}
               />
               {Number(countNotification) > 0 && (
-                <View
-                  style={{
-                    position: "absolute",
-                    top: 0,
-                    right: 0,
-                    width: 14,
-                    height: 14,
-                    borderRadius: 7,
-                    alignItems: "center",
-                    justifyContent: "center",
-                    backgroundColor: "#f00"
-                  }}
-                >
-                  <Text style={{ fontSize: 9, color: "#fff" }}>
-                    {countNotification}
-                  </Text>
+                <View style={styles.viewBadge}>
+                  <Text style={styles.badge}>{countNotification}</Text>
                 </View>
               )}
             </View>
@@ -106,16 +71,8 @@ class Main extends AppComponent {
         </Header>
         <Tabs
           locked={true}
-          tabBarUnderlineStyle={{
-            backgroundColor: colors.brandPrimary,
-            height: 1
-          }}
-          tabContainerStyle={{
-            height: 40,
-            elevation: 0,
-            borderBottomWidth: 0.8,
-            borderBottomColor: colors.windowBackground
-          }}
+          tabBarUnderlineStyle={styles.underlineTabs}
+          tabContainerStyle={styles.containerTabs}
         >
           <Tab
             heading={strings.cuDan}
@@ -149,6 +106,59 @@ class Main extends AppComponent {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  header: {
+    alignItems: "center",
+    backgroundColor: "white",
+    borderBottomWidth: 0
+  },
+  btnSearch: {
+    backgroundColor: colors.windowBackground,
+    flex: 1,
+    marginVertical: 5,
+    marginRight: 10,
+    padding: 5,
+    alignItems: "center",
+    borderRadius: 5,
+    flexDirection: "row"
+  },
+  textSearch: {
+    flex: 1,
+    marginLeft: 5,
+    color: "#c9c9c9"
+  },
+  iconNotification: {
+    fontSize: 25,
+    color: colors.textHeader,
+    paddingHorizontal: 5
+  },
+  viewBadge: {
+    position: "absolute",
+    top: 0,
+    right: 0,
+    width: 14,
+    height: 14,
+    borderRadius: 7,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#f00"
+  },
+  badge: {
+    fontSize: 9,
+    color: "#fff"
+  },
+  underlineTabs: {
+    backgroundColor: colors.brandPrimary,
+    height: 1
+  },
+  containerTabs: {
+    height: 40,
+    elevation: 0,
+    borderBottomWidth: 0.8,
+    borderBottomColor: colors.windowBackground
+  }
+});
 
 export default connect(
   state => ({
