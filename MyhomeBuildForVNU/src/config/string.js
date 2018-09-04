@@ -454,7 +454,7 @@ export default {
   daXuLy: "Đã xử lý",
   dieuKhoanTaoGianHang: "Điều khoản tạo gian hàng",
   daKhoa: "Đã khóa",
-  xoaCanHo: "Xóa lớp",
+  xoaCanHo: "Bạn chắc chắn muốn xóa lớp?",
   chucNang: "Chức năng",
   giaSanPhamPhaiLonHon0: "Giá sản phẩm phải lớn hơn 0",
   banDanhGia: "Bạn đánh giá ",
