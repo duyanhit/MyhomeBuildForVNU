@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "My Home VNU",
-    "icon": "./assets/logo_ios.png",
+    "icon": "./assets/vnu.png",
     "slug": "myhome-vnu",
     "sdkVersion": "29.0.0",
     "platforms": ["ios", "android"],
@@ -31,7 +31,7 @@
     "ios": {
       "bundleIdentifier": "com.gosol.myhome.vnu",
       "buildNumber": "1",
-      "icon": "./assets/logo_ios.png",
+      "icon": "./assets/vnu.png",
       "supportsTablet": true,
       "infoPlist": {
         "NSLocationAlwaysUsageDescription":
@@ -47,7 +47,7 @@
     "android": {
       "package": "com.gosol.myhome.vnu",
       "versionCode": 1,
-      "icon": "./assets/logo_android.png",
+      "icon": "./assets/vnu.png",
       "config": {
         "googleMaps": {
           "apiKey": "AIzaSyC1JPN275-TqqT_7Mktkat6REf7RB_62dg"

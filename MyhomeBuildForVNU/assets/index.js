@@ -1,4 +1,4 @@
-import logo from "./logo_android.png";
+import logo from "./vnu.png";
 import imTextMyHome from "./im_text_my_home.png";
 import icMail from "./icMail.png";
 import icDuyeTtaiKhoan from "./icDuyeTtaiKhoan.png";
