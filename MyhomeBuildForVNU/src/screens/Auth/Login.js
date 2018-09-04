@@ -504,6 +504,7 @@ class Login extends AppSignIn {
               onGoBack: this.dangNhapSDT
             })
           }
+          style={{ marginTop: 50 }}
         >
           <Text style={styles.viewDangKy}>{string.dangKy}</Text>
         </TouchableOpacity>
@@ -535,11 +536,11 @@ class Login extends AppSignIn {
                 style={styles.logo}
                 source={assets.logo}
               />
-              <Image
-                style={styles.textLogo}
-                resizeMode="contain"
-                source={assets.imTextMyHome}
-              />
+              {/*<Image*/}
+                {/*style={styles.textLogo}*/}
+                {/*resizeMode="contain"*/}
+                {/*source={assets.imTextMyHome}*/}
+              {/*/>*/}
             </View>
             {view}
           </View>
