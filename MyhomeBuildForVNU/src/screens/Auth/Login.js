@@ -466,37 +466,37 @@ class Login extends AppSignIn {
             />
           </TouchableWithoutFeedback>
         )}
-        <View
-          style={{
-            flexDirection: "row",
-            marginTop: 10,
-            marginBottom: 15
-          }}
-        >
-          <TouchableWithoutFeedback
-            onPress={this.dangNhapFBorGG.bind(this, "FB")}
-          >
-            <Image
-              resizeMode="contain"
-              style={{
-                borderRadius: 5,
-                width: 40,
-                height: 40,
-                marginRight: 10
-              }}
-              source={assets.icFacebook}
-            />
-          </TouchableWithoutFeedback>
-          <TouchableWithoutFeedback
-            onPress={this.dangNhapFBorGG.bind(this, "GG")}
-          >
-            <Image
-              resizeMode="contain"
-              style={{ borderRadius: 5, width: 40, height: 40 }}
-              source={assets.icGoogle}
-            />
-          </TouchableWithoutFeedback>
-        </View>
+        {/*<View*/}
+          {/*style={{*/}
+            {/*flexDirection: "row",*/}
+            {/*marginTop: 10,*/}
+            {/*marginBottom: 15*/}
+          {/*}}*/}
+        {/*>*/}
+          {/*<TouchableWithoutFeedback*/}
+            {/*onPress={this.dangNhapFBorGG.bind(this, "FB")}*/}
+          {/*>*/}
+            {/*<Image*/}
+              {/*resizeMode="contain"*/}
+              {/*style={{*/}
+                {/*borderRadius: 5,*/}
+                {/*width: 40,*/}
+                {/*height: 40,*/}
+                {/*marginRight: 10*/}
+              {/*}}*/}
+              {/*source={assets.icFacebook}*/}
+            {/*/>*/}
+          {/*</TouchableWithoutFeedback>*/}
+          {/*<TouchableWithoutFeedback*/}
+            {/*onPress={this.dangNhapFBorGG.bind(this, "GG")}*/}
+          {/*>*/}
+            {/*<Image*/}
+              {/*resizeMode="contain"*/}
+              {/*style={{ borderRadius: 5, width: 40, height: 40 }}*/}
+              {/*source={assets.icGoogle}*/}
+            {/*/>*/}
+          {/*</TouchableWithoutFeedback>*/}
+        {/*</View>*/}
 
         <TouchableOpacity
           onPress={() =>
