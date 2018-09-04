@@ -1,6 +1,6 @@
 // const HOST = "http://113.190.240.90:2004"; //local public
-// const HOST = "http://192.168.100.43:1004"; //local private
-const HOST = "http://cudandientu.com";
+const HOST = "http://192.168.100.43:1005"; //local private
+// const HOST = "http://cudandientu.com";
 const version = "/api/resident/v1/";
 export const API = {
   HOST,
